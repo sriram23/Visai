@@ -1,0 +1,502 @@
+<html>
+<body>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Style Sheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		//Vowels - Uyir
+		var a = "\u0b85";
+		var aa = "\u0b86";
+		var e = "\u0b87";
+		var ee = "\u0b88";
+		var u = "\u0b89";
+		var uu = "\u0b8a";
+		var ae = "\u0b8e";
+		var aee = "\u0b8f";
+		var ai = "\u0b90";
+		var o = "\u0b92";
+		var oo = "\u0b93";
+		var aw = "\u0b94";
+		//Consonants - Uyir Mei
+		var ka = "\u0b95";
+		var nga = "\u0b99";
+		var cha = "\u0b9a";
+		var ngya = "\u0b9e";
+		var ta = "\u0b9f";
+		var na3 = "\u0ba3";
+		var tha = "\u0ba4";
+		var na1 = "\u0ba8";
+		var pa = "\u0baa";
+		var ma = "\u0bae";
+		var ya = "\u0baf";
+		var ra1 = "\u0bb0";
+		var la1 = "\u0bb2";
+		var va = "\u0bb5";
+		var zh = "\u0bb4";
+		var la2 = "\u0bb3";
+		var ra2 = "\u0bb1";
+		var na2 = "\u0ba9";
+		// Kuril 
+		var k1 = "\u0bbf";
+		var k2 = "\u0bc1";
+		var k3 = "\u0bc6";
+		var k4 = "\u0bca";
+		// Nedil
+		var n1 = "\u0bbe";
+		var n2 = "\u0bc0";
+		var n3 = "\u0bc2";
+		var n4 = "\u0bc7";
+		var n5 = "\u0bc8";
+		var n6 = "\u0bcb";
+		var n7 = "\u0bcc";
+		// Mei
+		var mei = "\u0bcd";
+		// Aidham
+		var aidham = "\u0b83";
+		// Numbers
+		var num1 = "\u0be7";
+		var num2 = "\u0be8";
+		var num3 = "\u0be9";
+		var num4 = "\u0bea";
+		var num5 = "\u0beb";
+		var num6 = "\u0bec";
+		var num7 = "\u0bed";
+		var num8 = "\u0bee";
+		var num9 = "\u0bef";
+		//Special Characters
+		var sp1 = "\u0bf0";
+		var sp2 = "\u0bf1";
+		var sp3 = "\u0bf2";
+		var sp4 = "\u0bf3";
+		var sp5 = "\u0bf4";
+		var sp6 = "\u0bf5";
+		var sp7 = "\u0bf6";
+		var sp8 = "\u0bf7";
+		var sp9 = "\u0bf8";
+		var sp10 = "\u0bf9";
+		// Vadamozhi
+		var vm1 = "\u0bb6";
+		var vm2 = "\u0bb7";
+		var vm3 = "\u0bb8";
+		var vm4 = "\u0bb9";
+		//Sri
+		var sri = "\u0bb8\u0bcd\u0bb0\u0bc0"
+
+
+		function disp_a(){
+			//alert(a);
+			document.getElementById("ta").value += a;  
+		}
+		function disp_aa(){
+			//alert(aa);
+			document.getElementById("ta").value += aa;  
+		}
+		function disp_e(){
+			//alert(e);
+			document.getElementById("ta").value += e;  
+		}
+		function disp_ee(){
+			// alert(ee);
+			document.getElementById("ta").value += ee;  
+		}
+		function disp_u(){
+			// alert(u);
+			document.getElementById("ta").value += u;  
+		}
+		function disp_uu(){
+			// alert(uu);
+			document.getElementById("ta").value += uu;  
+		}
+		function disp_ae(){
+			// alert(ae);
+			document.getElementById("ta").value += ae;  
+		}
+		function disp_aee(){
+			// alert(aee);
+			document.getElementById("ta").value += aee;  
+		}
+		function disp_ai(){
+			// alert(ai);
+			document.getElementById("ta").value += ai;  
+		}
+		function disp_o(){
+			// alert(o);
+			document.getElementById("ta").value += o;  
+		}
+		function disp_oo(){
+			// alert(oo);
+			document.getElementById("ta").value += oo;  
+		}
+		function disp_aw(){
+			// alert(aw);
+			document.getElementById("ta").value += aw;  
+		}
+		function disp_ka(){
+			// alert(aw);
+			document.getElementById("ta").value += ka;  
+		}
+		function disp_nga(){
+			// alert(aw);
+			document.getElementById("ta").value += nga;  
+		}
+		function disp_cha(){
+			// alert(aw);
+			document.getElementById("ta").value += cha;  
+		}
+		function disp_ngya(){
+			// alert(aw);
+			document.getElementById("ta").value += ngya;  
+		}
+		function disp_ta(){
+			// alert(aw);
+			document.getElementById("ta").value += ta;  
+		}
+		function disp_na3(){
+			// alert(aw);
+			document.getElementById("ta").value += na3;  
+		}
+		function disp_tha(){
+			// alert(aw);
+			document.getElementById("ta").value += tha;  
+		}
+		function disp_na1(){
+			// alert(aw);
+			document.getElementById("ta").value += na1;  
+		}
+		function disp_pa(){
+			// alert(aw);
+			document.getElementById("ta").value += pa;  
+		}
+		function disp_ma(){
+			// alert(aw);
+			document.getElementById("ta").value += ma;  
+		}
+		function disp_ya(){
+			// alert(aw);
+			document.getElementById("ta").value += ya;  
+		}
+		function disp_ra1(){
+			// alert(aw);
+			document.getElementById("ta").value += ra1;  
+		}
+		function disp_la1(){
+			// alert(aw);
+			document.getElementById("ta").value += la1;  
+		}
+		function disp_va(){
+			// alert(aw);
+			document.getElementById("ta").value += va;  
+		}
+		function disp_zh(){
+			// alert(aw);
+			document.getElementById("ta").value += zh;  
+		}
+		function disp_la2(){
+			// alert(aw);
+			document.getElementById("ta").value += la2;  
+		}
+		function disp_ra2(){
+			// alert(aw);
+			document.getElementById("ta").value += ra2;  
+		}
+		function disp_na2(){
+			// alert(aw);
+			document.getElementById("ta").value += na2;  
+		}
+		function disp_k1(){
+			// alert(aw);
+			document.getElementById("ta").value += k1;  
+		}
+		function disp_k2(){
+			// alert(aw);
+			document.getElementById("ta").value += k2;  
+		}
+		function disp_k3(){
+			// alert(aw);
+			document.getElementById("ta").value += k3;  
+		}
+		function disp_k4(){
+			// alert(aw);
+			document.getElementById("ta").value += k4;  
+		}
+		function disp_n1(){
+			// alert(aw);
+			document.getElementById("ta").value += n1;  
+		}
+		function disp_n2(){
+			// alert(aw);
+			document.getElementById("ta").value += n2;  
+		}
+		function disp_n3(){
+			// alert(aw);
+			document.getElementById("ta").value += n3;  
+		}
+		function disp_n4(){
+			// alert(aw);
+			document.getElementById("ta").value += n4;  
+		}
+		function disp_n5(){
+			// alert(aw);
+			document.getElementById("ta").value += n5;  
+		}
+		function disp_n6(){
+			// alert(aw);
+			document.getElementById("ta").value += n6;  
+		}
+		function disp_n7(){
+			// alert(aw);
+			document.getElementById("ta").value += n7;  
+		}
+		function disp_mei(){
+			// alert(aw);
+			document.getElementById("ta").value += mei;  
+		}
+		function disp_aidham(){
+			// alert(aw);
+			document.getElementById("ta").value += aidham;  
+		}
+		function disp_num1(){
+			// alert(aw);
+			document.getElementById("ta").value += num1;  
+		}
+		function disp_num2(){
+			// alert(aw);
+			document.getElementById("ta").value += num2;  
+		}
+		function disp_num3(){
+			// alert(aw);
+			document.getElementById("ta").value += num3;  
+		}
+		function disp_num4(){
+			// alert(aw);
+			document.getElementById("ta").value += num4;  
+		}
+		function disp_num5(){
+			// alert(aw);
+			document.getElementById("ta").value += num5;  
+		}
+		function disp_num6(){
+			// alert(aw);
+			document.getElementById("ta").value += num6;  
+		}
+		function disp_num7(){
+			// alert(aw);
+			document.getElementById("ta").value += num7;  
+		}
+		function disp_num8(){
+			// alert(aw);
+			document.getElementById("ta").value += num8;  
+		}
+		function disp_num9(){
+			// alert(aw);
+			document.getElementById("ta").value += num9;  
+		}
+		function disp_sp1(){
+			// alert(aw);
+			document.getElementById("ta").value += sp1;  
+		}
+		function disp_sp2(){
+			// alert(aw);
+			document.getElementById("ta").value += sp2;  
+		}
+		function disp_sp3(){
+			// alert(aw);
+			document.getElementById("ta").value += sp3;  
+		}
+		function disp_sp4(){
+			// alert(aw);
+			document.getElementById("ta").value += sp4;  
+		}
+		function disp_sp5(){
+			// alert(aw);
+			document.getElementById("ta").value += sp5;  
+		}
+		function disp_sp6(){
+			// alert(aw);
+			document.getElementById("ta").value += sp6;  
+		}
+		function disp_sp7(){
+			// alert(aw);
+			document.getElementById("ta").value += sp7;  
+		}
+		function disp_sp8(){
+			// alert(aw);
+			document.getElementById("ta").value += sp8;  
+		}
+		function disp_sp9(){
+			// alert(aw);
+			document.getElementById("ta").value += sp9;  
+		}
+		function disp_sp10(){
+			// alert(aw);
+			document.getElementById("ta").value += sp10;  
+		}
+		function disp_vm1(){
+			// alert(aw);
+			document.getElementById("ta").value += vm1;  
+		}
+		function disp_vm2(){
+			// alert(aw);
+			document.getElementById("ta").value += vm2;  
+		}
+		function disp_vm3(){
+			// alert(aw);
+			document.getElementById("ta").value += vm3;  
+		}
+		function disp_vm4(){
+			// alert(aw);
+			document.getElementById("ta").value += vm4;  
+		}
+		function disp_sri(){
+			// alert(aw);
+			document.getElementById("ta").value += sri;  
+		}
+		function disp_bs(){
+			// alert(aw);
+			document.getElementById("ta").value = "";  
+		}
+		function disp_copy(){
+		  var copyText = document.getElementById("ta");
+		  copyText.select();
+		  document.execCommand("copy");
+		  var x = document.getElementById("snackbar");
+	    // Add the "show" class to DIV
+	    x.className = "show";
+	    // After 3 seconds, remove the show class from DIV
+	    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+		}
+	</script>
+	<h1 align="center">&#x0ba4&#x0bae&#x0bbf&#x0bb4&#x0bcd &#x0bb5&#x0bbf&#x0b9a&#x0bc8</h1>
+	<div class="container">
+	<!-- Text Area -->
+	<div class="row"><div class="col-md-12">
+		<div class="form-group">
+	<textarea class="form-control" id="ta" value = ""></textarea>
+		</div>
+	</div>
+	</div>
+	<!-- Vowels -->
+	<div class="row"><div class="col-md-12">
+	<strong>&#x0b89&#x0baf&#x0bbf&#x0bb0&#x0bc6&#x0bb4&#x0bc1&#x0ba4&#x0bcd&#x0ba4&#x0bc1&#x0b95&#x0bcd&#x0b95&#x0bb3&#x0bcd</strong>
+	<div class="container">
+		<button class="btn btn-primary" id = "a" onclick="disp_a();">&#x0b85</button>
+		<button class="btn btn-primary" id = "aa" onclick="disp_aa();">&#x0b86</button>
+		<button class="btn btn-primary" id = "e" onclick="disp_e();">&#x0b87</button>
+		<button class="btn btn-primary" id = "ee" onclick="disp_ee();">&#x0b88</button>
+		<button class="btn btn-primary" id = "u" onclick="disp_u();">&#x0b89</button>
+		<button class="btn btn-primary" id = "uu" onclick="disp_uu();">&#x0b8a</button>
+		<button class="btn btn-primary" id = "ae" onclick="disp_ae();">&#x0b8e</button>
+		<button class="btn btn-primary" id = "aee" onclick="disp_aee();">&#x0b8f</button>
+		<button class="btn btn-primary" id = "ai" onclick="disp_ai();">&#x0b90</button>
+		<button class="btn btn-primary" id = "o" onclick="disp_o();">&#x0b92</button>
+		<button class="btn btn-primary" id = "oo" onclick="disp_oo() ;">&#x0b93</button>
+		<button class="btn btn-primary" id = "aw" onclick="disp_aw();">&#x0b94</button>
+
+	</div></div></div>
+	<div class="row"><div class="col-md-12">
+	<strong>&#x0b89&#x0baf&#x0bbf&#x0bb0&#x0bcd&#x0bae&#x0bc6&#x0baf&#x0bcd&#x0baf&#x0bc6&#x0bb4&#x0bc1&#x0ba4&#x0bcd&#x0ba4&#x0bc1&#x0b95&#x0bcd&#x0b95&#x0bb3&#x0bcd</strong>
+	<div class="container">
+	<!-- Consonants -->
+	<button class="btn btn-primary" id = "ka" onclick="disp_ka();">&#x0b95</button>
+	<button class="btn btn-primary" id = "nga" onclick="disp_nga();">&#x0b99</button>
+	<button class="btn btn-primary" id = "cha" onclick="disp_cha();">&#x0b9a</button>
+	<button class="btn btn-primary" id = "ngya" onclick="disp_ngya();">&#x0b9e</button>
+	<button class="btn btn-primary" id = "ta" onclick="disp_ta();">&#x0b9f</button>
+	<button class="btn btn-primary" id = "na3" onclick="disp_na3();">&#x0ba3</button>
+	<button class="btn btn-primary" id = "tha" onclick="disp_tha();">&#x0ba4</button>
+	<button class="btn btn-primary" id = "na1" onclick="disp_na1();">&#x0ba8</button>
+	<button class="btn btn-primary" id = "pa" onclick="disp_pa();">&#x0baa</button>
+	<button class="btn btn-primary" id = "ma" onclick="disp_ma();">&#x0bae</button>
+	<button class="btn btn-primary" id = "ya" onclick="disp_ya();">&#x0baf</button>
+	<button class="btn btn-primary" id = "ra1" onclick="disp_ra1();">&#x0bb0</button>
+	<button class="btn btn-primary" id = "la1" onclick="disp_la1();">&#x0bb2</button>
+	<button class="btn btn-primary" id = "va" onclick="disp_va();">&#x0bb5</button>
+	<button class="btn btn-primary" id = "zh" onclick="disp_zh();">&#x0bb4</button>
+	<button class="btn btn-primary" id = "la2" onclick="disp_la2();">&#x0bb3</button>
+	<button class="btn btn-primary" id = "ra2" onclick="disp_ra2();">&#x0bb1</button>
+	<button class="btn btn-primary" id = "na2" onclick="disp_na2();">&#x0ba9</button>
+</div></div></div>
+<div class="row"><div class="col-md-12">
+<strong>&#x0b95&#x0bc1&#x0bb1&#x0bbf&#x0bb2&#x0bcd / &#x0ba8&#x0bc6&#x0b9f&#x0bbf&#x0bb2&#x0bcd</strong>
+<div class="container">
+	<!-- Kuril --><!-- Nedil -->
+	<button class="btn btn-primary" id = "k1" onclick="disp_k1();">&#x0bbf</button>
+	<button class="btn btn-primary" id = "n1" onclick="disp_n1();">&#x0bbe</button>
+	<button class="btn btn-primary" id = "k2" onclick="disp_k2();">&#x0bc1</button>
+	<button class="btn btn-primary" id = "n2" onclick="disp_n2();">&#x0bc0</button>
+	<button class="btn btn-primary" id = "k3" onclick="disp_k3();">&#x0bc6</button>
+	<button class="btn btn-primary" id = "n3" onclick="disp_n3();">&#x0bc2</button>
+	<button class="btn btn-primary" id = "k4" onclick="disp_k4();">&#x0bca</button>
+	<button class="btn btn-primary" id = "n4" onclick="disp_n4();">&#x0bc7</button>
+	<button class="btn btn-primary" id = "n5" onclick="disp_n5();">&#x0bc8</button>
+	<button class="btn btn-primary" id = "n6" onclick="disp_n6();">&#x0bcb</button>
+	<button class="btn btn-primary" id = "n7" onclick="disp_n7();">&#x0bcc</button>
+</div></div></div>
+<div class="row"><div class="col-md-12">
+<strong>&#x0bae&#x0bc6&#x0baf&#x0bcd & &#x0b86&#x0baf&#x0bcd&#x0ba4&#x0bae&#x0bcd</strong>
+<div class="container">
+	<!-- Mei -->
+	<button class="btn btn-primary" id = "mei" onclick="disp_mei();">&#x0bcd</button>
+	<!-- Aidham -->
+	<button class="btn btn-primary" id = "aidham" onclick="disp_aidham();">&#x0b83</button>
+</div></div></div>
+<div class="row"><div class="col-md-12">
+<strong>&#x0b8e&#x0ba3&#x0bcd&#x0b95&#x0bb3&#x0bcd</strong>
+<div class="container">
+	<!-- Numbers -->
+	<button class="btn btn-primary" id = "num1" onclick="disp_num1();">&#x0be7</button>
+	<button class="btn btn-primary" id = "num2" onclick="disp_num2();">&#x0be8</button>
+	<button class="btn btn-primary" id = "num3" onclick="disp_num3();">&#x0be9</button>
+	<button class="btn btn-primary" id = "num4" onclick="disp_num4();">&#x0bea</button>
+	<button class="btn btn-primary" id = "num5" onclick="disp_num5();">&#x0beb</button>
+	<button class="btn btn-primary" id = "num6" onclick="disp_num6();">&#x0bec</button>
+	<button class="btn btn-primary" id = "num7" onclick="disp_num7();">&#x0bed</button>
+	<button class="btn btn-primary" id = "num8" onclick="disp_num8();">&#x0bee</button>
+	<button class="btn btn-primary" id = "num9" onclick="disp_num9();">&#x0bef</button>
+</div></div></div>
+<div class="row"><div class="col-md-12">
+<strong>&#x0b95&#x0bc1&#x0bb1&#x0bbf&#x0baf&#x0bc0&#x0b9f&#x0bc1&#x0bb3&#x0bcd</strong>
+<div class="container">
+	<!-- Special Characters -->
+	<button class="btn btn-primary" class="btn btn-primary" id = "sp1" onclick="disp_sp1();">&#x0bf0</button>
+	<button class="btn btn-primary" id = "sp2" onclick="disp_sp2();">&#x0bf1</button>
+	<button class="btn btn-primary" id = "sp3" onclick="disp_sp3();">&#x0bf2</button>
+	<button class="btn btn-primary" id = "sp4" onclick="disp_sp4();">&#x0bf3</button>
+	<button class="btn btn-primary" id = "sp5" onclick="disp_sp5();">&#x0bf4</button>
+	<button class="btn btn-primary" id = "sp6" onclick="disp_sp6();">&#x0bf5</button>
+	<button class="btn btn-primary" id = "sp7" onclick="disp_sp7();">&#x0bf6</button>
+	<button class="btn btn-primary" id = "sp8" onclick="disp_sp8();">&#x0bf7</button>
+	<button class="btn btn-primary" id = "sp9" onclick="disp_sp9();">&#x0bf8</button>
+	<button class="btn btn-primary" id = "sp10" onclick="disp_sp10();">&#x0bf9</button>
+</div></div></div>
+<div class="row"><div class="col-md-12">
+<strong>&#x0bb5&#x0b9f&#x0bae&#x0bca&#x0bb4&#x0bbf</strong>
+<div class="container">
+	<!-- Vadamozhi -->
+	<button class="btn btn-primary" id = "vm1" onclick="disp_vm1();">&#x0bb6</button>
+	<button class="btn btn-primary" id = "vm2" onclick="disp_vm2();">&#x0bb7</button>
+	<button class="btn btn-primary" id = "vm3" onclick="disp_vm3();">&#x0bb8</button>
+	<button class="btn btn-primary" id = "vm4" onclick="disp_vm4();">&#x0bb9</button>
+	<!-- SRI -->
+	<button class="btn btn-primary" id = "sri" onclick="disp_sri();">&#x0bb8&#x0bcd&#x0bb0&#x0bc0</button>
+</div></div></div>
+<div class="row"><div class="col-md-12">
+<strong>&#x0b9a&#x0bc6&#x0baf&#x0bb2&#x0bcd&#x0baa&#x0bbe&#x0b9f&#x0bc1&#x0b95&#x0bb3&#x0bcd</strong>
+<div class="container">
+	<!-- Erase -->
+	<button class="btn btn-primary" id = "bs" onclick="disp_bs();">&#x0b85&#x0bb4&#x0bbf&#x0b95&#x0bcd&#x0b95</button>
+	<!-- Copy -->
+	<button class="btn btn-primary" id = "cp" onclick="disp_copy();">&#x0ba8&#x0b95&#x0bb2&#x0bcd &#x0b8e&#x0b9f&#x0bc1&#x0b95&#x0bcd&#x0b95</button>
+	<!-- Toast -->
+	<div id="snackbar">&#x0ba8&#x0b95&#x0bb2&#x0bcd &#x0b8e&#x0b9f&#x0bc1&#x0b95&#x0bcd&#x0b95&#x0baa&#x0bcd&#x0baa&#x0b9f&#x0bcd&#x0b9f&#x0ba4&#x0bc1</div>
+	</div></div></div>
+</div>
+</body>
+</html>
