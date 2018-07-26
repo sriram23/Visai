@@ -363,7 +363,11 @@
 		}
 		function disp_bs(){
 			// alert(aw);
-			document.getElementById("ta").value = "";  
+			// ta.value = ta.value.substring(0, ta.value.length - 1);
+			 document.getElementById("ta").value = document.getElementById("ta").value.substring(0, document.getElementById("ta").value.length - 1);  
+		}
+		function disp_ent(){
+			  document.getElementById("ta").value += "\n";
 		}
 		function disp_copy(){
 		  var copyText = document.getElementById("ta");
@@ -381,7 +385,7 @@
 	<!-- Text Area -->
 	<div class="row"><div class="col-md-12 col-sm-12">
 		<div class="form-group">
-	<textarea class="form-control" id="ta" value = ""></textarea>
+	<textarea class="form-control" id="ta" name="ta" value = ""></textarea>
 		</div>
 	</div>
 	</div>
@@ -497,6 +501,8 @@
 	<button class="btn btn-primary" id = "bs" onclick="disp_bs();">&#x0b85&#x0bb4&#x0bbf&#x0b95&#x0bcd&#x0b95</button>
 	<!-- Copy -->
 	<button class="btn btn-primary" id = "cp" onclick="disp_copy();">&#x0ba8&#x0b95&#x0bb2&#x0bcd &#x0b8e&#x0b9f&#x0bc1&#x0b95&#x0bcd&#x0b95</button>
+	<!-- Enter -->
+	<button class="btn btn-primary" id = "ent" onclick="disp_ent()">&#x23ce</button>
 	<!-- Toast -->
 	<div id="snackbar">&#x0ba8&#x0b95&#x0bb2&#x0bcd &#x0b8e&#x0b9f&#x0bc1&#x0b95&#x0bcd&#x0b95&#x0baa&#x0bcd&#x0baa&#x0b9f&#x0bcd&#x0b9f&#x0ba4&#x0bc1</div>
 	</div></div></div>
